@@ -1,0 +1,161 @@
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ echo "Hello world"
+Hello world
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ mkdir new_dir
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ rmdir new_dir
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ cp lorem/sed.txt lorem-copy
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem-copy
+dummy_file.txt  sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem
+at.txt  at.txte  lorem.txt  sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ cp lorem/at.txt lorem-copy; cp lorem/lorem.txt lorem-copy
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem-copy
+at.txt  dummy_file.txt  lorem.txt  sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ cat lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ cat lorem/at.txt lorem/lorem.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ cat --help
+Usage: cat [OPTION]... [FILE]...
+Concatenate FILE(s) to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+  -A, --show-all           equivalent to -vET
+  -b, --number-nonblank    number nonempty output lines, overrides -n
+  -e                       equivalent to -vE
+  -E, --show-ends          display $ at end of each line
+  -n, --number             number all output lines
+  -s, --squeeze-blank      suppress repeated empty output lines
+  -t                       equivalent to -vT
+  -T, --show-tabs          display TAB characters as ^I
+  -u                       (ignored)
+  -v, --show-nonprinting   use ^ and M- notation, except for LFD and TAB
+      --help     display this help and exit
+      --version  output version information and exit
+
+Examples:
+  cat f - g  Output f's contents, then standard input, then g's contents.
+  cat        Copy standard input to standard output.
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report any translation bugs to <https://translationproject.org/team/>
+Full documentation <https://www.gnu.org/software/coreutils/cat>
+or available locally via: info '(coreutils) cat invocation'
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ head -n3 lorem/sed.txt
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ tail -n3 lorem/sed.txt
+Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?Homo homini lupus
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ echo "Homo homini lupus." > lorem-copy/sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ tail -n3 lorem-copy/sed.txt
+Homo homini lupus.
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ sed s/et/ET/g lorem/at.txt
+At vero eos ET accusamus ET iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+deleniti atque corrupti quos dolores ET quas molestias excepturi sint occaecati cupiditate non
+provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum ET dolorum fuga.
+Et harum quidem rerum facilis est ET expedita distinctio.
+Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+Temporibus autem quibusdam ET aut officiis debitis aut rerum necessitatibus saepe eveniET
+ut ET voluptates repudiandae sint ET molestiae non recusandae.
+Itaque earum rerum hic tenETur a sapiente delectus, ut aut reiciendis voluptatibus maiores
+alias consequatur aut perferendis doloribus asperiores repellat
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ echo $USERNAME
+lahrm
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ echo $PATH
+/c/Users/lahrm/bin:/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/mingw64/bin:/usr/bin:/c/Users/lahrm/bin:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/iCLS:/c/Program Files/Intel/Intel(R) Management Engine Components/iCLS:/c/windows/system32:/c/windows:/c/windows/System32/Wbem:/c/windows/System32/WindowsPowerShell/v1.0:/c/windows/System32/OpenSSH:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/cmd:/c/Program Files/MySQL/MySQL Shell 8.0/bin:/c/Users/lahrm/AppData/Local/Microsoft/WindowsApps:/c/Users/lahrm/AppData/Local/Programs/Microsoft VS Code/bin:/usr/bin/vendor_perl:/usr/bin/core_perl
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem | grep .txt
+at.txt
+at.txte
+lorem.txt
+sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem | grep *.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem | grep .txt
+at.txt
+at.txte
+lorem.txt
+sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls lorem/*.txt
+lorem/at.txt  lorem/lorem.txt  lorem/sed.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ cat lorem/sed.txt | wc -l
+9
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls */lorem*
+lorem-copy/lorem.txt  lorem/lorem.txt
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls */lorem* | wc
+      2       2      37
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls */lorem* | wc -l
+2
