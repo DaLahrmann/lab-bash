@@ -159,3 +159,24 @@ $ ls */lorem* | wc
 lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
 $ ls */lorem* | wc -l
 2
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ read name
+Daniel
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ echo $name
+Daniel
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ mkdir $name
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ ls
+Daniel/      exercices/  lorem/       outputs/
+cmdFile.txt  inputs/     lorem-copy/  readme.md
+
+lahrm@DESKTOP-JOMEB94 MINGW64 ~/OneDrive/Desktop/Ironhack/lab-bash (master)
+$ rmdir $name
+
+
